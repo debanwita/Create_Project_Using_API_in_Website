@@ -20,7 +20,7 @@
                 </div>
                 <br><br>
                 <div class="imagediv">
-                    <img src="img.png" width="200" height="200" id="imgchange">
+                    <img src="img.png" width="200" height="200" class="imgchange">
                 </div>
                 <br><br>
                 <button>Click me</button>
@@ -32,8 +32,9 @@
         <script>
             $(document).ready(function(){
                 $('button').click(function(){
-                    const a = $('#nameid').val();
-                    alert(a);
+                    const name = $('#nameid').val();
+                    alert(name);
+                    $('.imgchange').attr('src',`https://joeschmoe.io/api/v1/${name}`);
                 });
             });
         </script>
