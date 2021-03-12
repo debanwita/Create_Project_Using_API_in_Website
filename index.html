@@ -16,15 +16,26 @@
                     <label>Enter Your Name</label>
                     <br>
                     <input type="text" name="" id="nameid">
-                    <br>
+                   
                 </div>
+                <br><br>
                 <div class="imagediv">
                     <img src="img.png" width="200" height="200" id="imgchange">
                 </div>
-
+                <br><br>
                 <button>Click me</button>
+                
             </div>
+           
         </section>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
+        <script>
+            $(document).ready(function(){
+                $('button').click(function(){
+                    const a = $('#nameid').val();
+                    alert(a);
+                });
+            });
+        </script>
     </body>
 </html>
